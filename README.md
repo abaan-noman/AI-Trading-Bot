@@ -35,6 +35,3 @@ if __name__ == "__main__":
     broker = Alpaca(MLTrader.ALPACA_CREDS)
     strategy = MLTrader(name='mlstrat', broker=broker, parameters={"symbol": "SPY", "cash_at_risk": 0.5})
     strategy.backtest(YahooDataBacktesting, start_date, end_date, parameters={"symbol": "SPY", "cash_at_risk": 0.5})
-
-Credits:
-This project was inspired by the work of Nicholas Renotte
